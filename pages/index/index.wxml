@@ -1,0 +1,7 @@
+<view class="indexContainger">
+  <image class="indexImg" src="/images/index/cart.jpg"></image>
+  <text class="userName">Helloween</text>
+  <view class="goStudy">
+    <text>开始小程序之旅</text>
+  </view>
+</view>

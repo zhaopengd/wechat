@@ -1,0 +1,34 @@
+
+/* 两个半分百 解决背景充满整个屏幕 */
+.indexContainger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #c2ccd0;
+  height: 100%;
+}
+
+.indexImg {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 100rpx;
+  margin: 100rpx 0;
+}
+
+.userName {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin: 100rpx 0;
+  color: rgba(114, 137, 243, 0.933);
+}
+
+.goStudy {
+  width: 200rpx;
+  height: 80rpx;
+  border: 1rpx solid rgb(107, 240, 233);
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 10rpx;
+  color: rgba(72, 185, 176, 0.933);
+}
