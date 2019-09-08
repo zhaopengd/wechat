@@ -5,14 +5,40 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    msg : " 我是初始化的数据" ,
+    userInfo:{}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(this.data.msg)
+    // 小程序中修改数据：this.setData() 和react类似
+    // 小程序中的数据流是单向的
+    // 执行到此的时候 页面已经出来了 在此处发送请求
+    wx.getUserInfo({
+      success:(data)=>{
+        console.log(data.userInfo);
+        this.setData({ // 注意this指向 采用箭头函数
+          userInfo:data.userInfo
+        })
+      },
+      fail:function(){
+        console.log('获取用户信息失败')
+      }
+    })
+  },
+  handleGetUserInfo(info){
+    console.log(info)
+    // 判断用户点击是否是允许
+    if(info.detail.rawData){// 此时返回的数据是一个JSON格式
+      // 修改 状态
+      this.setData({
+        userInfo: JSON.parse(info.detail.rawData)
+      })
+    }
+   
   },
 
   /**
@@ -52,7 +78,7 @@ Page({
 
   /**
    * 页面上拉触底事件的处理函数
-   */
+   */ 
   onReachBottom: function () {
 
   },
