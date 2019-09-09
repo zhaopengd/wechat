@@ -1,5 +1,5 @@
-
 /* 两个半分百 解决背景充满整个屏幕 */
+
 .indexContainger {
   display: flex;
   flex-direction: column;
@@ -13,6 +13,16 @@
   height: 200rpx;
   border-radius: 100rpx;
   margin: 100rpx 0;
+}
+
+.btn {
+  width: 300rpx;
+  height: 300rpx;
+  margin: 100rpx 0;
+  border-radius: 200rpx;
+  font-size: 36rpx;
+  line-height: 200rpx;
+  background: pink
 }
 
 .userName {
