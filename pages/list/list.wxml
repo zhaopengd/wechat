@@ -1,3 +1,4 @@
+<import src='../listTemplate/listTemplate.wxml' />
 <view class="listContainer">
   <swiper indicator-dots="true" indicator-color="#00CCFF" circular="true">
     <swiper-item>
@@ -13,4 +14,5 @@
       <image src="/images/detail/carousel/04.jpg"></image>
     </swiper-item>
   </swiper>
+  <template is="listTmp" />
 </view>
