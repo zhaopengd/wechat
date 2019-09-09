@@ -1,8 +1,13 @@
 <view class="indexContainger">
   <image wx:if='{{userInfo.avatarUrl}}' class="indexImg" src='{{userInfo.avatarUrl}}'></image>
-   <button class="btn" wx:else='{{userInfo.avatarUrl}}'  open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo"> 获取用户信息</button>
+  <button class="btn" 
+    wx:else='{{userInfo.avatarUrl}}' 
+    open-type="getUserInfo" 
+    bindgetuserinfo="handleGetUserInfo"
+  > 获取用户信息
+  </button>
   <text class="userName">Helloween{{userInfo.nickName}}</text>
-  <view class="goStudy">
+  <view catchtap="roList" class="goStudy">
     <text>开始小程序之旅</text>
   </view>
-</view>
+</view> 

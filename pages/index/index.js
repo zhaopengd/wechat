@@ -40,6 +40,12 @@ Page({
     }
    
   },
+  roList(){
+    // 跳转到list页面 
+    wx.navigateTo({ // 保留当前页面 然后跳转  对比redirectTo 
+      url: '/pages/list/list',
+    })
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
